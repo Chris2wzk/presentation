@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下载演示文稿</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+        }
+        .download-btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 30px;
+            margin: 20px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .note {
+            color: #666;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+    </style>
+    <script>
+        // 使用延迟加载，给页面一点时间显示
+        window.onload = function() {
+            setTimeout(function() {
+                window.location.href = "项目简介-证书-成绩单等.pptx";
+            }, 1500);
+        }
+    </script>
+</head>
+<body>
+    <h1>演示文稿下载</h1>
+    <p>文件正在准备下载...</p>
+    <a href="你的文件名.pptx" class="download-btn">点击此处立即下载</a>
+    
+    <div class="note">
+        <p>手机用户说明：</p>
+        <p>- iOS用户可能需要选择"下载"选项</p>
+        <p>- 下载后需要用 PowerPoint 或兼容应用打开</p>
+    </div>
+</body>
+</html>
